@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Roberto Romea-Jones | Portfolio</title>
+<title>Roberto Romea-Jones | Software Developer & Engineer</title>
 <!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Tinos:wght@700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Fira+Code&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Tinos:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 <!-- External CSS -->
 <link rel="stylesheet" href="style.css">
-<!--- Favicon -->
+<!-- Favicon -->
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -18,68 +18,123 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>Roberto Romea-Jones</h1>
-        <h2>Software Engineering Graduate | Developer</h2>
+        <div class="hero-content">
+            <h1>Roberto<br>Romea-Jones</h1>
+            <div class="subtitle-wrapper">
+                <h2>Software Engineer</h2>
+                <span class="subtitle-accent">Developer</span>
+            </div>
+        </div>
     </section>
 
     <!-- About Section -->
     <section class="about">
-        <h2>About Me</h2>
-        <p> I'm a software engineering graduate and I’m currently working as an Analyst Developer for Edinburgh Woollen Mill, where I build internal tools and automate data workflows using C#, .NET technologies, SQL, SSIS, and SSRS to support reporting and business processes. </p>
-        <br>
-        <br>
-        <p>When I’m not working on tech projects, you’ll usually find me with a guitar in hand or at a local gig, engaging in the live music scene. I love discovering upcoming musicians. I’m also a keen reader (currently deep into Douglas Adams’ Hitchhiker’s Guide to the Galaxy series), a skateboarder, and a rock climber. I also have a history working in hospitality and such I enjoy crafting cocktails and cooking.</p>
+        <h2>About</h2>
+        <div class="about-content">
+            <p>I'm a software engineering graduate currently working as an <span class="accent-text">Analyst Developer</span> at Edinburgh Woollen Mill, where I design and build internal tools, automate complex data workflows, and develop reporting solutions using C#, .NET, SQL, SSIS, and SSRS. My work spans system migrations, data pipeline engineering, PowerBI dashboard development, and solving day-to-day technical challenges across the organization.</p>
+            
+            <p>Outside of work, I'm deeply embedded in the live music scene—you'll find me at gigs discovering emerging artists, or with a guitar in hand. I'm also a reader (currently deep in Douglas Adams), skateboarder, rock climber, and I enjoy crafting cocktails and cooking.</p>
+        </div>
+    </section>
+
     <!-- Projects Section -->
     <section class="projects">
         <h2>Projects</h2>
+        
         <div class="project-card">
-            <h3>Discord Discbot bot</h3>
-            <p>Discogs Discord Bot A cross-language Discord bot built with JavaScript and Python that fetches detailed record information from the Discogs database. By integrating both the Discord and Discogs APIs, the bot allows users to query vinyl releases, artists, and catalog data directly from chat. Designed for music collectors and crate diggers, it delivers fast, formatted responses with a clean command structure and robust error handling</p>
+            <div class="project-header">
+                <h3>Discord Discogs Bot</h3>
+                <span class="project-tech">JavaScript • Python • APIs</span>
+            </div>
+            <p>A cross-language Discord bot that fetches detailed record information from the Discogs database. By integrating both Discord and Discogs APIs, users can query vinyl releases, artists, and catalog data directly from chat. Designed for music collectors and crate diggers, it delivers fast, formatted responses with clean command structure and robust error handling.</p>
         </div>
+
         <div class="project-card">
-            <h3>Collabrative Spotify playlist generator.</h3>
-            <p>Tired of arguing with who gets the aux at a party I built a bot that turns music selection into a game. This collaborative Spotify playlist generator lets groups vote on songs in real time, creating a shared playlist democratically — and with a competitive twist. Using Spotify’s API and custom logic in JavaScript and Python, the bot tracks votes, ranks tracks, and updates the playlist dynamically.</p>
+            <div class="project-header">
+                <h3>Collaborative Spotify Playlist Generator</h3>
+                <span class="project-tech">JavaScript • Python • Spotify API</span>
+            </div>
+            <p>Tired of arguing over the aux at parties, I built a bot that turns music selection into a democratic game. This collaborative playlist generator lets groups vote on songs in real time, creating a shared playlist with a competitive twist. Using Spotify's API and custom voting logic, the bot tracks rankings and updates the playlist dynamically, ensuring everyone's voice is heard.</p>
         </div>
+
         <div class="project-card">
-            <h3>Comic book reccomender system</h3>
-            <p>Built as my final-year dissertation, this project is a full-stack AI-powered web application designed to introduce users to comic books they didn’t know they’d love. I engineered a custom weighted recommendation algorithm in Java, trained on curated comic metadata and user preference patterns. From data selection and preprocessing to backend logic, I developed the entire pipeline — integrating a secure login system, a relational database, and a responsive frontend to deliver personalized suggestions. The system emphasizes discovery over popularity, ensuring serendipitous yet accurate reccomendations. Available to view upon request.</p>
+            <div class="project-header">
+                <h3>Comic Book Recommender System</h3>
+                <span class="project-tech">Java • Python • Machine Learning • Full Stack</span>
+            </div>
+            <p>My final-year dissertation project: a full-stack AI-powered web application designed to introduce users to comic books they didn't know they'd love. I engineered a custom hybrid filtering algorithm in Java, trained on curated comic metadata and user preference patterns. The system learns granular preferences across artist, author, decade, genre, and publisher, then surfaces serendipitous yet accurate recommendations. From data selection and preprocessing through the entire backend pipeline using custom pandas implementations, to a secure login system and responsive frontend—I built it from scratch. The emphasis is on discovery over popularity. Available to view upon request.</p>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience">
+        <h2>Experience</h2>
+        
+        <div class="experience-card">
+            <div class="exp-header">
+                <h3>Analyst Developer</h3>
+                <span class="exp-date">Dec 2023 – Present</span>
+            </div>
+            <p class="exp-company">Edinburgh Woollen Mill</p>
+            <p>Design and maintain internal tools and reporting solutions. Lead system migrations (moving legacy infrastructure to modern servers while preserving reporting pipelines). Develop and optimize SSIS ETL workflows, SSRS reports, and PowerBI dashboards. Engineer complex SQL views for business intelligence. Handle technology support for retail locations (inventory, pricing, scanning systems). Build automation solutions to streamline data workflows and reduce manual processes across the organization.</p>
+        </div>
+
+        <div class="experience-card">
+            <div class="exp-header">
+                <h3>AI Model Trainer (Level 2)</h3>
+                <span class="exp-date">2023 – 2024</span>
+            </div>
+            <p class="exp-company">Outlier AI</p>
+            <p>Evaluated and provided detailed feedback on code generation outputs for emerging LLMs. Assessed code competency, identified model strengths and weaknesses, and contributed to model improvement through comprehensive evaluation during a critical period of LLM development.</p>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section class="hero">
+    <section class="skills">
         <h2>Skills</h2>
-        <div class="project-card">I am experienced in Python, Java, Javascript, HTML/CSS/React, C#, SQL.</div>
-    </section>
-
-    <section class="hero">
-        <h2>Experience</h2>
-        <div class="project-card">Analyst Developer - Edinburh Woollen mill Dec 2025-Present</div>
-        <div class="project-card">Freelance web developer - Developed websites for local business and implented tech solution within hospitality August 2025 - Dec</div>
-        <div class="project-card">Freelance AI model trainer level 2 expret -Outlier AI - Rated and critiqued model responses to coding based prompts.</div>
+        <div class="skills-grid">
+            <div class="skill-group">
+                <span class="skill-label">Languages</span>
+                <p>Python • Java • JavaScript • C# • SQL</p>
+            </div>
+            <div class="skill-group">
+                <span class="skill-label">Frontend</span>
+                <p>HTML • CSS • React</p>
+            </div>
+            <div class="skill-group">
+                <span class="skill-label">Backend & Data</span>
+                <p>C# • .NET • SSIS • SSRS • PowerBI • SQL</p>
+            </div>
+            <div class="skill-group">
+                <span class="skill-label">Tools & Platforms</span>
+                <p>Pandas • Git • API Integration • System Migration</p>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
     <section class="contact">
         <h2>Contact</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Email" required>
-            <textarea rows="5" placeholder="Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+        <div class="contact-content">
+            <p>Let's talk. Reach out via email or use the form below.</p>
+            <div class="contact-info">
+                <a href="mailto:Robertoromeajones@gmail.com" class="email-link">Robertoromeajones@gmail.com</a>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea rows="5" placeholder="Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Roberto Romea-Jones</p>
+    </footer>
 
 </div>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
